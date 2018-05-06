@@ -1,6 +1,6 @@
 # App biblioteca
 
-##Ejemplo de proyecto Ruby para organizar libros:
+## Ejemplo de proyecto Ruby para organizar libros:
 
 Rails version: 5.2.0
 
