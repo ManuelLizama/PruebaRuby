@@ -1,8 +1,9 @@
 # App biblioteca
 
-Ejemplo de proyecto Ruby para organizar libros:
+##Ejemplo de proyecto Ruby para organizar libros:
 
 Rails version: 5.2.0
+
 Ruby version: 2.3.3 (i386-mingw32)
 
 framework css Bootstrap 3
