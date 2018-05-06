@@ -1,0 +1,13 @@
+<h1>Lista de libros</h1>
+
+<% @books.in_groups_of(3) do |group| %>
+  <div class="row">
+    <% group.compact.each do |book| %>
+      <div class="col-md-4">
+        <%= image_tag book.cover_url, width: '50%' if book.cover.present? %>
+        <h4><%= link_to book.name, book %></h4>
+        <%= book.publisher %>
+      </div>
+    <% end %>
+  </div>
+<% end %>

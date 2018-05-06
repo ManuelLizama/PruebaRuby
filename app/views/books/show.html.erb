@@ -1,0 +1,20 @@
+
+<div class="row">
+  <div class="col-md-9">
+    <%= image_tag(@book.cover_url, width: '50%') if @book.cover.present? %>
+  </div>
+
+  <div class="col-md-3">
+    <p><b>Nombre: </b><%= @book.name %></p>
+    <p><b>Editorial: </b><%= @book.publisher %></p>
+    <p><b>Descripcion: </b><%= @book.description %></p>
+    <p><b>Fecha publicacion: </b><%= @book.pub_date %></p>
+
+    <p>
+      <%= link_to 'Editar', edit_book_path(@book) %> |
+      <%= link_to 'Eliminar', @book, data: { confirm: '¿Esta seguro?' }, method: :delete %> |
+      <%= link_to 'Volver', books_path %>
+    </p>
+
+  </div>
+</div>
